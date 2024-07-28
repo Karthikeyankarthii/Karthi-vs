@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Resume</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Saravanakumar</h1>
+                <h2>Wep developer</h2>
+            </div>
+            <div class="main">
+                <button class="btn" onclick="showSection('summery')">Summary</button>
+                <button class="btn" onclick="showSection('skills')">Technical Skills</button>
+                <button class="btn" onclick="showSection('experience')">Professional Experience</button>
+                <button class="btn" onclick="showSection('education')">Education</button>
+                 
+                <div id="summery"class="section">
+                    <h3>Summary</h3>
+                    <p>Highly motivated and details-oriended software engineer with 5+ years of experience in developer and efficint software solutions.</p>
+                </div>
+            <div id="skills"class="section"style="display:none;">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Programming languages:Java,Pyton,Javascript</li>
+                        <li>Development framework:Spring,Django,React</li>
+                        <li>Database:Mysql,MangoDB,PostgreSQL</li>
+                    </ul>
+                </div>
+
+                <div id="experience"class="section"style="display:none;">
+                    <h3>Professtional Experience</h3>
+                    <div class="experience">
+                        <h4>Software Engineer,ABC Company(2020-Present)</h4>
+                        <p>contributed to the development multiple features for a cloud-based project management tool using Java and Spring.</p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h4>Junior Software Engineer,DEF Company(2018-2020)</h4>
+                    <p>contributed to the development of mobile app for iOS and Android using React Native.</p>
+                </div>
+
+                <div id="education"class="section"style="display:none;">
+                    <h3>Education</h3>
+                    <p>Bachelor of Science in Information Technology,GTN Instutions(2015-2018)</p>
+                </div>
+                        
+            </div>
+        </div>
+        <script>
+            function showSection(sectionId)
+            {
+                var section=document.getElementsByClassName('section');
+                for(var i=0; i<sections.length;i++)
+                {
+                    sections[i].style.dispaly='none';
+                }
+                document.getElementById(sectionId).style.display="block";
+            }
+        </script>
+    </body>
+</html>
